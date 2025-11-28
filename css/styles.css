@@ -61,5 +61,5 @@ body {
 
     background:
         radial-gradient(circle, transparent 7px,
-            var(--accent-soft) 8px) 0 0 / 30px 20px repeat-x;
+            var(--bg) 8px) 0 0 / 30px 20px repeat-x;
 }
