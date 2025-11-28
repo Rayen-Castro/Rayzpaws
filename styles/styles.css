@@ -1,0 +1,48 @@
+/* Paleta de Colores :3 */
+:root {
+    --bg: #FCECF4;
+    --text: #4b2337;
+    --accent: #E77CA3;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0e1117;
+        --text: #d8cbe8;
+        --accent: #F49AC2;
+    }
+}
+
+body {
+    background: var(--bg);
+    margin: 0;
+    padding: 40px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Cuadro */
+.cuadro {
+    background: var(--text);
+    border-radius: 16px;
+    padding: 30px 40px;
+    width: min(600px, 90%);
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Perforado */
+.cuadro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 10px;
+    height: 100%;
+    background: repeating-linear-gradient(to bottom,
+            #ffb6c1 0,
+            #ffb6c1 6px,
+            transparent 6px,
+            transparent 20px);
+}
