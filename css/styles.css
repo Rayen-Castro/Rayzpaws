@@ -1,24 +1,42 @@
 /* Paleta de Colores :3 */
-:root {
-    --bg: #FCECF4;
+:root[data-theme="light"] {
+    --bg: #E77CA3;
     --text: #4b2337;
-    --accent: #E77CA3;
+    --accent: #FCECF4;
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0e1117;
-        --text: #e8cbe1;
-        --accent: #F49AC2;
-    }
+:root[data-theme="dark"] {
+    --bg: #0e1117;
+    --text: #e8cbd9;
+    --accent: #F49AC2;
 }
 
 body {
     background: var(--bg);
+    color: var(--text);
     margin: 0;
     padding: 40px;
     font-family: "Inter", sans-serif;
+}
+
+/* boton de cambio de tema */
+#toggle-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+#toggle-theme:hover {
+    opacity: 0.85;
 }
 
 /* Cuadro */
@@ -41,8 +59,8 @@ body {
     width: 10px;
     height: 100%;
     background: repeating-linear-gradient(to bottom,
-            #ffb6c1 0,
-            #ffb6c1 6px,
+            var(--bg) 0,
+            var(--bg) 6px,
             transparent 6px,
             transparent 20px);
 }
