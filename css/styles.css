@@ -60,5 +60,5 @@ body {
     height: 20px;
 
     background:
-        radial-gradient(circle, #3cff00 7px, transparent 8px) 0 0 / 30px 20px repeat-x;
+        radial-gradient(circle, #3cff00 8px, transparent 9px) 0 0 / 30px 20px repeat-x;
 }
