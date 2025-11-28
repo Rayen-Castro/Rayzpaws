@@ -53,6 +53,7 @@ body {
 /* Perforado */
 .cuadro::before {
     content: "";
+    color: #3cff00;
     position: absolute;
     top: -20px;
     left: 0;
@@ -60,5 +61,5 @@ body {
     height: 20px;
 
     background:
-        radial-gradient(circle, transparent 7px, #3cff00 8px) 0 0 / 30px 20px repeat-x;
+        radial-gradient(circle, transparent 7px, 8px) 0 0 / 30px 20px repeat-x;
 }
