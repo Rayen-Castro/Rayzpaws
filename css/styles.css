@@ -9,7 +9,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #0e1117;
-        --text: #d8cbe8;
+        --text: #e8cbe1;
         --accent: #F49AC2;
     }
 }
@@ -23,7 +23,7 @@ body {
 
 /* Cuadro */
 .cuadro {
-    background: var(--text);
+    background: var(--accent);
     border-radius: 16px;
     padding: 30px 40px;
     width: min(600px, 90%);
