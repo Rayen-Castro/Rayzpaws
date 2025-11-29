@@ -100,3 +100,23 @@ body {
 :root[data-theme="dark"] #banner {
     content: url("../img/darkbanner.jpg");
 }
+
+#pfp {
+    position: absolute;
+    top: 240px;
+    right: 20px;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    border: 6px solid var(--accent);
+
+    object-fit: cover;
+    object-position: center;
+
+    background: var(--bg);
+    z-index: 20;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
