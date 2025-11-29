@@ -12,12 +12,18 @@
     --accent: #F49AC2;
 }
 
+
+:root {
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
 body {
     background: var(--bg);
     color: var(--text);
     margin: 0;
     padding: 40px;
     font-family: "Inter", sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* boton de cambio de tema */
@@ -32,11 +38,12 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-size: 0.9rem;
-    transition: background 0.2s ease;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
 #toggle-theme:hover {
     opacity: 0.85;
+    transform: scale(1.1);
 }
 
 /* Cuadro */
