@@ -51,7 +51,7 @@ body {
     background: var(--accent);
     border-radius: 16px;
     padding: 30px 40px;
-    width: min(600px, 40%);
+    width: min(600px, 90%);
     margin: 0 auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -68,4 +68,25 @@ body {
 
     background:
         radial-gradient(circle, var(--bg) 8px, transparent 9px) 0 0 / 45px 20px repeat-x;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 600px;
+    display: none;
+}
+
+:root[data-theme="light"] .banner-light {
+    display: block;
+}
+
+:root[data-theme="dark"] .banner-dark {
+    display: block;
 }
