@@ -21,7 +21,7 @@ body {
     color: var(--text);
     margin: 0;
     padding: 40px;
-    font-family: "Inter", sans-serif;
+    font-family: "Arial", sans-serif;
     transition: background 0.4s ease, color 0.4s ease;
 }
 
@@ -48,6 +48,7 @@ body {
 /* Cuadro */
 .cuadro {
     background: var(--accent);
+    color: var(--text);
     border-radius: 16px;
     padding: 40px;
     padding-top: 260px;
