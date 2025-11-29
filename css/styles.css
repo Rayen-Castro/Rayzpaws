@@ -12,7 +12,6 @@
     --accent: #F49AC2;
 }
 
-
 :root {
     transition: background 0.4s ease, color 0.4s ease;
 }
@@ -26,7 +25,7 @@ body {
     transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* boton de cambio de tema */
+/* Botón cambio de tema */
 #toggle-theme {
     position: fixed;
     top: 20px;
@@ -50,11 +49,13 @@ body {
 .cuadro {
     background: var(--accent);
     border-radius: 16px;
-    padding: 30px 40px;
+    padding: 40px;
+    padding-top: 260px;
     width: min(600px, 90%);
     margin: 0 auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
+    overflow: hidden;
 }
 
 /* Perforado */
@@ -65,28 +66,37 @@ body {
     left: 0;
     width: 100%;
     height: 20px;
+    z-index: 10;
 
     background:
         radial-gradient(circle, var(--bg) 8px, transparent 9px) 0 0 / 45px 20px repeat-x;
 }
 
-.banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
+/* Banner dentro del cuadro */
+#banner {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    height: 200px;
+    border-radius: 12px;
+
+    object-fit: cover;
+    object-position: center;
+
+    pointer-events: none;
+    transition: opacity .5s;
+
+    z-index: 5;
 }
 
-.banner img {
-    width: 100%;
-    max-width: 600px;
-    display: none;
+/* Cambia según modo */
+:root[data-theme="light"] #banner {
+    content: url("../img/lightbanner.jpg");
 }
 
-:root[data-theme="light"] .banner-light {
-    display: block;
-}
-
-:root[data-theme="dark"] .banner-dark {
-    display: block;
+:root[data-theme="dark"] #banner {
+    content: url("../img/darkbanner.jpg");
 }
