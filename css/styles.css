@@ -20,7 +20,7 @@ body {
     background: var(--bg);
     margin: 0;
     padding: 40px;
-    font-family: "Arial", sans-serif;
+    font-family: "TikTok Sans", sans-serif;
     transition: background 0.4s ease, color 0.4s ease;
 }
 
@@ -125,6 +125,7 @@ section {
     margin-bottom: 10px;
     font-family: "Margarine", sans-serif;
     font-weight: 700;
+    text-shadow: 2px 2px var(--bg);
 }
 
 .inicio p {
@@ -138,7 +139,6 @@ section {
 .sobre-mi h2 {
     font-size: 1.7rem;
     margin-bottom: 10px;
-    font-family: "Margarine", sans-serif;
 }
 
 .sobre-mi p {
@@ -153,7 +153,6 @@ section {
 .habilidades h2 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    font-family: "Margarine", sans-serif;
 }
 
 .habilidades p {
