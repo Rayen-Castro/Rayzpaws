@@ -45,17 +45,18 @@ body {
 }
 
 .float-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     pointer-events: none;
+    z-index: 30;
 }
 
 .float {
     position: absolute;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     animation: levitar 6s ease-in-out infinite alternate;
     color: var(--text);
     text-shadow: 4px 4px rgba(0, 0, 0, 0.2);
@@ -70,6 +71,15 @@ body {
         transform: translateY(-20px) rotate(6deg);
     }
 }
+
+.deco1 {top: 34%; left: 20%;}
+
+.deco2 {top: 60%; left: 10%;}
+
+.deco3 {top: 92%; left: 30%;}
+
+.deco4 {top: 120%; left: 20%;}
+
 
 /* Cuadro */
 .cuadro {
